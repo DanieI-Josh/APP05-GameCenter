@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <style name="Theme.GameCenter" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaria</item>
+        <item name="colorAccent">@color/primaria</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:textColorPrimary">@color/texto</item>
+    </style>
+    <style name="Texto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/corpo</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:layout_marginBottom">@dimen/espaco</item>
+    </style>
+    <style name="Titulo" parent="Texto">
+        <item name="android:textSize">@dimen/titulo</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Campo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">@dimen/corpo</item>
+        <item name="android:layout_marginBottom">@dimen/espaco</item>
+    </style>
+    <style name="Botao">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

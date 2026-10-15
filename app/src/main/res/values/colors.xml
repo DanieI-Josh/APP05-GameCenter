@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <color name="fundo">#FAFAFA</color>
+    <color name="texto">#202124</color>
+    <color name="primaria">#365B7D</color>
+    <color name="superficie">#EEEEEE</color>
+    <color name="correto">#236B36</color>
+    <color name="deslocado">#856000</color>
+    <color name="ausente">#565B62</color>
+    <color name="branco">#FFFFFF</color>
+</resources>

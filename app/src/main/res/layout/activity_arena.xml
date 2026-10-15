@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scrollConteudo" android:layout_width="0dp" android:layout_height="0dp" android:fillViewport="true" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="16dp">
+            <TextView android:id="@+id/textTitulo" style="@style/Titulo" android:text="@string/arena" />
+            <TextView android:id="@+id/textRegra" style="@style/Texto" android:text="@string/escolha" />
+            <TextView android:id="@+id/textPlacar" style="@style/Titulo" android:text="@string/aguardando" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <ImageButton android:id="@+id/buttonPedra" android:layout_width="match_parent" android:layout_height="72dp" android:src="@drawable/ic_pedra" android:contentDescription="@string/pedra" android:padding="12dp" android:scaleType="fitCenter" />
+                    <TextView android:id="@+id/textPedra" style="@style/Texto" android:text="@string/pedra" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <ImageButton android:id="@+id/buttonPapel" android:layout_width="match_parent" android:layout_height="72dp" android:src="@drawable/ic_papel" android:contentDescription="@string/papel" android:padding="12dp" android:scaleType="fitCenter" />
+                    <TextView android:id="@+id/textPapel" style="@style/Texto" android:text="@string/papel" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <ImageButton android:id="@+id/buttonTesoura" android:layout_width="match_parent" android:layout_height="72dp" android:src="@drawable/ic_tesoura" android:contentDescription="@string/tesoura" android:padding="12dp" android:scaleType="fitCenter" />
+                    <TextView android:id="@+id/textTesoura" style="@style/Texto" android:text="@string/tesoura" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageJogador" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ic_game" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
+                <ImageView android:id="@+id/imageDispositivo" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ic_game" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
+            </LinearLayout>
+            <TextView android:id="@+id/textJogadas" style="@style/Texto" android:text="@string/aguardando" />
+            <TextView android:id="@+id/textResultado" style="@style/Texto" android:text="@string/aguardando" android:background="@drawable/painel" android:accessibilityLiveRegion="polite" />
+            <Button android:id="@+id/buttonNova" style="@style/Botao" android:text="@string/nova_partida" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/buttonVoltar" style="@style/Botao" android:text="@string/voltar" android:layout_width="0dp" android:layout_weight="1" />
+                <Button android:id="@+id/buttonEncerrar" style="@style/Botao" android:text="@string/encerrar" android:layout_width="0dp" android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

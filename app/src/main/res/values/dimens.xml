@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <dimen name="margem">16dp</dimen>
+    <dimen name="espaco">8dp</dimen>
+    <dimen name="titulo">24sp</dimen>
+    <dimen name="corpo">16sp</dimen>
+</resources>
