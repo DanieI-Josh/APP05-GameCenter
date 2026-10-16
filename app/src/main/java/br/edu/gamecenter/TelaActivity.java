@@ -20,6 +20,9 @@ public abstract class TelaActivity extends AppCompatActivity  {
     }
     protected void preparar(View raiz) {
         WindowCompat.setDecorFitsSystemWindows(getWindow(),false);
+        androidx.core.view.WindowInsetsControllerCompat sistema=WindowCompat.getInsetsController(getWindow(),raiz);
+        sistema.setAppearanceLightStatusBars(false);
+        sistema.setAppearanceLightNavigationBars(false);
         int margem=getResources().getDimensionPixelSize(R.dimen.margem);
         ViewCompat.setOnApplyWindowInsetsListener(raiz,(view,insets)-> {
             Insets bordas=insets.getInsets(WindowInsetsCompat.Type.systemBars()|WindowInsetsCompat.Type.ime()|WindowInsetsCompat.Type.displayCutout()); view.setPadding(margem+bordas.left,margem+bordas.top,margem+bordas.right,margem+bordas.bottom);return insets;

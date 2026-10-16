@@ -5,7 +5,7 @@ Integrantes:
 - Cecília — 20251012000856
 - Curso: Análise e Desenvolvimento de Sistemas
 
-Projeto acadêmico em Java e XML. Esta entrega tem aparência genérica a pedido do grupo. As seis telas, validações, desafios, sons locais, animações e navegação estão implementados. A personalização final será feita pelo grupo.
+Projeto acadêmico em Java e XML. Versão 1.1 com identidade retrô em rosa, roxo e azul. As seis telas, validações, desafios, sons locais, animações e navegação estão implementados. Consulte IDENTIDADE-VISUAL.md para a paleta e os recursos.
 
 ## Abrir no Android Studio
 
@@ -36,7 +36,7 @@ Estado pequeno de interface e jogos é preservado em recriações de tela. Dados
 - `app/src/main/res/values/styles.xml`: estilos dos textos, campos e botões.
 - `app/src/main/res/values-v27/styles.xml`: configuração de tema para versões mais recentes; mantenha coerente com o tema padrão.
 - `app/src/main/res/values/dimens.xml`: margens e tamanhos de texto.
-- `app/src/main/res/values/strings.xml`: identificação, nome, orientações, categorias, mensagens e créditos.
+- `app/src/main/res/values/strings.xml`: identificação, nome, orientações, categorias e mensagens.
 - `app/src/main/res/layout/activity_*.xml`: organização das seis telas.
 - `app/src/main/res/layout/item_opcao.xml`: cartão reutilizável do Randomizador.
 - `app/src/main/res/drawable`: ícones vetoriais genéricos e fundo de painel.
@@ -64,4 +64,4 @@ Preserve IDs, tipos dos componentes e referências de View Binding ao trocar o v
 
 ## Entrega acadêmica posterior
 
-Esta versão ainda receberá a identidade visual do grupo. O enunciado do APP05 solicita projeto completo, código no GitHub, APK por link do Google Drive no Teams, créditos e apresentação ou demonstração por vídeo. Nenhum repositório, upload ou vídeo é criado por este projeto. O APK incluído é de depuração, para instalação direta, não publicação na Play Store.
+A identidade retrô solicitada pelo grupo já foi aplicada. O enunciado do APP05 solicita projeto completo, código no GitHub, APK por link do Google Drive no Teams e apresentação ou demonstração por vídeo. Nenhum repositório, upload ou vídeo é criado por este projeto. O APK incluído é de depuração, para instalação direta, não publicação na Play Store.

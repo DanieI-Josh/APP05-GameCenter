@@ -1,0 +1,1 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item android:drawable="@drawable/campo"/><item android:drawable="@drawable/ic_seta" android:width="12dp" android:height="12dp" android:gravity="end|center_vertical" android:right="14dp"/></layer-list>

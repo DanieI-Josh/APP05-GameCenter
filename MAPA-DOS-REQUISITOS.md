@@ -33,4 +33,4 @@ A classe abstrata `TelaActivity` compartilha comportamento; não é declarada no
 
 O projeto não usa findViewById, android:onClick, Handler, Thread, Runnable, Compose, banco de dados, permissões de internet ou RecyclerView dentro de ScrollView. Não usa post/postDelayed/withEndAction para agendar ações. O botão de entrada navega pelo callback AnimatorListenerAdapter ao fim da animação.
 
-As regras foram baseadas no documento do APP05 e nas Aulas 01–07. O visual permanece genérico por solicitação do grupo; a personalização final, a publicação e a apresentação ficam para a próxima etapa.
+As regras foram baseadas no documento do APP05 e nas Aulas 01–07. O visual retrô foi aplicado em rosa, roxo e azul, com um controle original em pixel art, ícone adaptativo e recursos locais. A publicação do APK no Drive e a apresentação são etapas separadas.

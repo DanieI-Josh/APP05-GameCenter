@@ -1,18 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_screen">
     <androidx.core.widget.NestedScrollView android:id="@+id/scrollConteudo" android:layout_width="0dp" android:layout_height="0dp" android:fillViewport="true" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="16dp">
-            <TextView android:id="@+id/textTitulo" style="@style/Titulo" android:text="@string/scanner" />
-            <TextView android:id="@+id/textRegra" style="@style/Texto" android:text="@string/regra_scanner" />
-            <EditText android:id="@+id/editMensagem" style="@style/Campo" android:hint="@string/mensagem" android:inputType="textCapSentences|textMultiLine" android:minLines="3" android:maxLength="2000" android:gravity="top|start" />
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                <Button android:id="@+id/buttonAnalisar" style="@style/Botao" android:text="@string/analisar" android:layout_width="0dp" android:layout_weight="1" />
-                <Button android:id="@+id/buttonLimpar" style="@style/Botao" android:text="@string/limpar" android:layout_width="0dp" android:layout_weight="1" />
+            <TextView style="@style/Etiqueta" android:id="@+id/textTagModulo" android:text="@string/tag_scanner" android:textColor="@color/rosa" />
+            <TextView android:id="@+id/textTitulo" style="@style/Titulo" android:text="@string/scanner" android:layout_marginBottom="16dp" />
+            <TextView android:id="@+id/textRegra" style="@style/Texto" android:text="@string/regra_scanner" android:textColor="@color/secundario" android:textSize="14sp" android:layout_marginBottom="16dp" />
+            <EditText android:id="@+id/editMensagem" style="@style/Campo" android:hint="@string/mensagem" android:inputType="textCapSentences|textMultiLine" android:minLines="3" android:maxLength="2000" android:gravity="top|start" app:backgroundTint="@null" android:maxLines="6" android:fontFamily="monospace" android:textSize="15sp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
+                <Button android:id="@+id/buttonAnalisar" style="@style/Botao" android:text="@string/analisar" android:layout_width="0dp" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" />
+                <Button android:id="@+id/buttonLimpar" style="@style/BotaoSecundario" android:text="@string/limpar" android:layout_width="0dp" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" />
             </LinearLayout>
-            <TextView android:id="@+id/textResultado" style="@style/Texto" android:text="@string/resultado_vazio" android:background="@drawable/painel" android:accessibilityLiveRegion="polite" />
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                <Button android:id="@+id/buttonVoltar" style="@style/Botao" android:text="@string/voltar" android:layout_width="0dp" android:layout_weight="1" />
-                <Button android:id="@+id/buttonEncerrar" style="@style/Botao" android:text="@string/encerrar" android:layout_width="0dp" android:layout_weight="1" />
+            <TextView android:id="@+id/textResultado" style="@style/Texto" android:text="@string/resultado_vazio" android:background="@drawable/painel_azul" android:accessibilityLiveRegion="polite" android:padding="16dp" android:textColor="@color/texto" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:textSize="15sp" android:lineSpacingExtra="6dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
+                <Button android:id="@+id/buttonVoltar" style="@style/BotaoSecundario" android:text="@string/voltar" android:layout_width="0dp" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" />
+                <Button android:id="@+id/buttonEncerrar" style="@style/BotaoSecundario" android:text="@string/encerrar" android:layout_width="0dp" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

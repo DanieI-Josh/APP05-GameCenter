@@ -24,7 +24,7 @@ O projeto possui exatamente seis telas:
 
 A navegação usa Intents explícitas, extras validados, finish(), CLEAR_TOP, SINGLE_TOP e onNewIntent(). O ciclo de vida é registrado no Logcat. Não há banco de dados ou acesso à internet no aplicativo.
 
-**Esta é a versão funcional com interface genérica. A identidade visual será aplicada pelo grupo em uma próxima etapa.**
+**Versão 1.1 com identidade retrô em rosa, roxo e azul, controle em pixel art, ícone adaptativo e layout horizontal do Randomizador.**
 
 ## Abrir no Android Studio
 
@@ -44,11 +44,14 @@ Configuração: Android Gradle Plugin 9.3.3, Gradle 9.5.0, SDK 37.0, fontes Java
 
 O verificador instrumentado externo não integra o código do aplicativo. Os testes locais estão em `app/src/test`.
 
+## Identidade visual
+
+A paleta e os recursos visuais estão descritos em [IDENTIDADE-VISUAL.md](IDENTIDADE-VISUAL.md). As regras dos quatro desafios foram preservadas.
+
 ## Documentação
 
 - [Guia do projeto e personalização](LEIA-ME.md)
 - [Mapa dos requisitos](MAPA-DOS-REQUISITOS.md)
 - [Verificação e limitações](VERIFICACAO.md)
-- [Créditos de imagens e sons](CREDITOS.md)
 
 Os XMLs ficam em `app/src/main/res/layout`; textos, cores, dimensões e estilos ficam em `app/src/main/res/values`. Os sons são locais em `res/raw`.

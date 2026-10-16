@@ -1,15 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_screen">
     <androidx.core.widget.NestedScrollView android:id="@+id/scrollConteudo" android:layout_width="0dp" android:layout_height="0dp" android:fillViewport="true" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="16dp">
-            <ImageView android:id="@+id/imageLogo" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ic_game" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
-            <TextView android:id="@+id/textTitulo" style="@style/Titulo" android:text="@string/app_name" />
-            <TextView android:id="@+id/textParticipantes" style="@style/Texto" android:text="@string/participantes" />
-            <TextView android:id="@+id/textOrientacao" style="@style/Texto" android:text="@string/apresentacao" />
-            <EditText android:id="@+id/editApelido" style="@style/Campo" android:hint="@string/apelido" android:inputType="textPersonName" android:maxLength="40" android:singleLine="true" />
-            <Button android:id="@+id/buttonEntrar" style="@style/Botao" android:text="@string/entrar" />
-            <TextView android:id="@+id/textUltimoModulo" style="@style/Texto" android:text="@string/ultimo_vazio" />
-            <TextView android:id="@+id/textCreditos" style="@style/Texto" android:text="@string/creditos" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/hero" android:layout_marginBottom="16dp" android:padding="12dp">
+                <TextView style="@style/Etiqueta" android:id="@+id/textTagInicio" android:text="@string/tag_inicio" android:gravity="center" android:textColor="@color/rosa" />
+                <ImageView android:id="@+id/imageLogo" android:layout_width="240dp" android:layout_height="150dp" android:src="@drawable/controller_arcade" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="0dp" android:scaleType="centerCrop" />
+                <TextView android:id="@+id/textTitulo" style="@style/Titulo" android:text="@string/app_name" android:textSize="28sp" android:textColor="@color/texto" android:gravity="center" android:layout_marginBottom="8dp" />
+                <TextView android:id="@+id/textOrientacao" style="@style/Texto" android:text="@string/apresentacao" android:textColor="@color/secundario" android:gravity="center" android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/painel" android:layout_marginBottom="16dp" android:padding="16dp">
+                <TextView style="@style/Etiqueta" android:id="@+id/textTagEquipe" android:text="@string/tag_equipe" />
+                <TextView android:id="@+id/textParticipantes" style="@style/Texto" android:text="@string/participantes" android:textSize="14sp" android:lineSpacingExtra="4dp" android:layout_marginBottom="0dp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/painel" android:layout_marginBottom="16dp" android:padding="16dp">
+                <TextView style="@style/Etiqueta" android:id="@+id/textTagApelido" android:text="@string/tag_apelido" />
+                <EditText android:id="@+id/editApelido" style="@style/Campo" android:hint="@string/apelido" android:inputType="textPersonName" android:maxLength="40" android:singleLine="true" app:backgroundTint="@null" />
+                <Button android:id="@+id/buttonEntrar" style="@style/Botao" android:text="@string/entrar" />
+            </LinearLayout>
+            <TextView android:id="@+id/textUltimoModulo" style="@style/Texto" android:text="@string/ultimo_vazio" android:textSize="13sp" android:textColor="@color/azul" android:fontFamily="monospace" android:paddingTop="4dp" android:paddingBottom="8dp" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

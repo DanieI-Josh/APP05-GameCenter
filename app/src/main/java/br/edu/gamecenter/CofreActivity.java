@@ -41,7 +41,10 @@ public class CofreActivity extends TelaActivity  {
         for(String tentativa:partida.getTentativas()) {
             TextView rotulo=new TextView(this);
             rotulo.setText(getString(R.string.numero_tentativa,++numero));
-            rotulo.setTextColor(ContextCompat.getColor(this,R.color.texto));
+            rotulo.setTextColor(ContextCompat.getColor(this,R.color.secundario));
+            rotulo.setTextSize(12);
+            rotulo.setTypeface(android.graphics.Typeface.MONOSPACE);
+            rotulo.setPadding(0,8,0,4);
             binding.layoutHistorico.addView(rotulo);
             LinearLayout linha=new LinearLayout(this);
             linha.setOrientation(LinearLayout.HORIZONTAL);

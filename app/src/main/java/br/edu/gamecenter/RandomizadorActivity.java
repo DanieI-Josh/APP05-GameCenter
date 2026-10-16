@@ -39,8 +39,8 @@ public class RandomizadorActivity extends TelaActivity  {
             opcoes.add(new Opcao(getString(R.string.ex_lugar),getString(R.string.cat_lugares)));
             opcoes.add(new Opcao(getString(R.string.ex_desafio),getString(R.string.cat_desafios)));
         }
-        ArrayAdapter<CharSequence> categorias=ArrayAdapter.createFromResource(this,R.array.categorias,android.R.layout.simple_spinner_item);
-        categorias.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> categorias=ArrayAdapter.createFromResource(this,R.array.categorias,R.layout.item_spinner);
+        categorias.setDropDownViewResource(R.layout.item_spinner);
         binding.spinnerCategoria.setAdapter(categorias);
         adapter=new OpcaoAdapter(opcoes,this::remover);
         binding.recyclerOpcoes.setAdapter(adapter);

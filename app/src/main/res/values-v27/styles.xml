@@ -1,12 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <style name="Theme.GameCenter" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.GameCenter" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/primaria</item>
-        <item name="colorAccent">@color/primaria</item>
+        <item name="colorPrimaryDark">@color/fundo</item>
+        <item name="colorAccent">@color/azul</item>
         <item name="android:fontFamily">sans</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:statusBarColor">@color/fundo</item>
+        <item name="android:navigationBarColor">@color/fundo</item>
         <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:colorBackground">@color/fundo</item>
         <item name="android:textColorPrimary">@color/texto</item>
+        <item name="android:textColorSecondary">@color/secundario</item>
+        <item name="android:windowActionModeOverlay">true</item>
     </style>
 </resources>

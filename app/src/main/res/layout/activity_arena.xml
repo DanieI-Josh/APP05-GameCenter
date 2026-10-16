@@ -1,34 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_screen">
     <androidx.core.widget.NestedScrollView android:id="@+id/scrollConteudo" android:layout_width="0dp" android:layout_height="0dp" android:fillViewport="true" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="16dp">
-            <TextView android:id="@+id/textTitulo" style="@style/Titulo" android:text="@string/arena" />
-            <TextView android:id="@+id/textRegra" style="@style/Texto" android:text="@string/escolha" />
-            <TextView android:id="@+id/textPlacar" style="@style/Titulo" android:text="@string/aguardando" />
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView style="@style/Etiqueta" android:id="@+id/textTagModulo" android:text="@string/tag_arena" android:textColor="@color/rosa" />
+            <TextView android:id="@+id/textTitulo" style="@style/Titulo" android:text="@string/arena" android:layout_marginBottom="16dp" />
+            <TextView android:id="@+id/textRegra" style="@style/Texto" android:text="@string/escolha" android:textColor="@color/secundario" android:textSize="14sp" android:layout_marginBottom="16dp" />
+            <TextView android:id="@+id/textPlacar" style="@style/Titulo" android:text="@string/aguardando" android:textSize="21sp" android:background="@drawable/painel_azul" android:padding="14dp" android:gravity="center" android:textColor="@color/azul" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
-                    <ImageButton android:id="@+id/buttonPedra" android:layout_width="match_parent" android:layout_height="72dp" android:src="@drawable/ic_pedra" android:contentDescription="@string/pedra" android:padding="12dp" android:scaleType="fitCenter" />
-                    <TextView android:id="@+id/textPedra" style="@style/Texto" android:text="@string/pedra" />
+                    <ImageButton android:id="@+id/buttonPedra" android:layout_width="match_parent" android:layout_height="72dp" android:src="@drawable/ic_pedra" android:contentDescription="@string/pedra" android:padding="14dp" android:scaleType="fitCenter" android:background="@drawable/botao_secundario" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" app:backgroundTint="@null" />
+                    <TextView android:id="@+id/textPedra" style="@style/Texto" android:text="@string/pedra" android:gravity="center" android:textSize="13sp" android:textColor="@color/secundario" android:layout_marginTop="6dp" />
                 </LinearLayout>
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
-                    <ImageButton android:id="@+id/buttonPapel" android:layout_width="match_parent" android:layout_height="72dp" android:src="@drawable/ic_papel" android:contentDescription="@string/papel" android:padding="12dp" android:scaleType="fitCenter" />
-                    <TextView android:id="@+id/textPapel" style="@style/Texto" android:text="@string/papel" />
+                    <ImageButton android:id="@+id/buttonPapel" android:layout_width="match_parent" android:layout_height="72dp" android:src="@drawable/ic_papel" android:contentDescription="@string/papel" android:padding="14dp" android:scaleType="fitCenter" android:background="@drawable/botao_secundario" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" app:backgroundTint="@null" />
+                    <TextView android:id="@+id/textPapel" style="@style/Texto" android:text="@string/papel" android:gravity="center" android:textSize="13sp" android:textColor="@color/secundario" android:layout_marginTop="6dp" />
                 </LinearLayout>
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
-                    <ImageButton android:id="@+id/buttonTesoura" android:layout_width="match_parent" android:layout_height="72dp" android:src="@drawable/ic_tesoura" android:contentDescription="@string/tesoura" android:padding="12dp" android:scaleType="fitCenter" />
-                    <TextView android:id="@+id/textTesoura" style="@style/Texto" android:text="@string/tesoura" />
+                    <ImageButton android:id="@+id/buttonTesoura" android:layout_width="match_parent" android:layout_height="72dp" android:src="@drawable/ic_tesoura" android:contentDescription="@string/tesoura" android:padding="14dp" android:scaleType="fitCenter" android:background="@drawable/botao_secundario" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" app:backgroundTint="@null" />
+                    <TextView android:id="@+id/textTesoura" style="@style/Texto" android:text="@string/tesoura" android:gravity="center" android:textSize="13sp" android:textColor="@color/secundario" android:layout_marginTop="6dp" />
                 </LinearLayout>
             </LinearLayout>
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                <ImageView android:id="@+id/imageJogador" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ic_game" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
-                <ImageView android:id="@+id/imageDispositivo" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ic_game" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false" android:padding="12dp" android:background="@drawable/painel" android:layout_marginTop="8dp" android:layout_marginBottom="10dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+                    <TextView style="@style/Etiqueta" android:id="@+id/textLabelJogador" android:text="@string/titulo_jogador" android:gravity="center" />
+                    <ImageView android:id="@+id/imageJogador" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/ic_game" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+                    <TextView style="@style/Etiqueta" android:id="@+id/textLabelDispositivo" android:text="@string/titulo_dispositivo" android:gravity="center" />
+                    <ImageView android:id="@+id/imageDispositivo" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/ic_game" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
+                </LinearLayout>
             </LinearLayout>
-            <TextView android:id="@+id/textJogadas" style="@style/Texto" android:text="@string/aguardando" />
-            <TextView android:id="@+id/textResultado" style="@style/Texto" android:text="@string/aguardando" android:background="@drawable/painel" android:accessibilityLiveRegion="polite" />
-            <Button android:id="@+id/buttonNova" style="@style/Botao" android:text="@string/nova_partida" />
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                <Button android:id="@+id/buttonVoltar" style="@style/Botao" android:text="@string/voltar" android:layout_width="0dp" android:layout_weight="1" />
-                <Button android:id="@+id/buttonEncerrar" style="@style/Botao" android:text="@string/encerrar" android:layout_width="0dp" android:layout_weight="1" />
+            <TextView android:id="@+id/textJogadas" style="@style/Texto" android:text="@string/aguardando" android:textSize="14sp" android:textColor="@color/secundario" android:gravity="center" />
+            <TextView android:id="@+id/textResultado" style="@style/Texto" android:text="@string/aguardando" android:background="@drawable/painel_azul" android:accessibilityLiveRegion="polite" android:padding="16dp" android:textColor="@color/texto" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+            <Button android:id="@+id/buttonNova" style="@style/BotaoSecundario" android:text="@string/nova_partida" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
+                <Button android:id="@+id/buttonVoltar" style="@style/BotaoSecundario" android:text="@string/voltar" android:layout_width="0dp" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" />
+                <Button android:id="@+id/buttonEncerrar" style="@style/BotaoSecundario" android:text="@string/encerrar" android:layout_width="0dp" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

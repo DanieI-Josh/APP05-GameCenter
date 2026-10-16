@@ -1,35 +1,73 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <style name="Theme.GameCenter" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.GameCenter" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/primaria</item>
-        <item name="colorAccent">@color/primaria</item>
+        <item name="colorPrimaryDark">@color/fundo</item>
+        <item name="colorAccent">@color/azul</item>
         <item name="android:fontFamily">sans</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/fundo</item>
+        <item name="android:navigationBarColor">@color/fundo</item>
         <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:colorBackground">@color/fundo</item>
         <item name="android:textColorPrimary">@color/texto</item>
+        <item name="android:textColorSecondary">@color/secundario</item>
+        <item name="android:windowActionModeOverlay">true</item>
     </style>
     <style name="Texto">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/corpo</item>
         <item name="android:textColor">@color/texto</item>
+        <item name="android:lineSpacingExtra">3dp</item>
         <item name="android:layout_marginBottom">@dimen/espaco</item>
     </style>
     <style name="Titulo" parent="Texto">
         <item name="android:textSize">@dimen/titulo</item>
+        <item name="android:fontFamily">monospace</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texto</item>
+    </style>
+    <style name="Etiqueta" parent="Texto">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/azul</item>
+        <item name="android:letterSpacing">0.08</item>
     </style>
     <style name="Campo">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:minHeight">48dp</item>
-        <item name="android:textSize">@dimen/corpo</item>
-        <item name="android:layout_marginBottom">@dimen/espaco</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textColorHint">@color/secundario</item>
+        <item name="android:background">@drawable/campo</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
     </style>
     <style name="Botao">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:minHeight">48dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:background">@drawable/botao_principal</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+    <style name="BotaoSecundario" parent="Botao">
+        <item name="android:textColor">@color/azul</item>
+        <item name="android:background">@drawable/botao_secundario</item>
     </style>
 </resources>

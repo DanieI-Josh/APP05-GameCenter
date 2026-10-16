@@ -1,33 +1,46 @@
 <?xml version='1.0' encoding='utf-8'?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollConteudo" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollConteudo" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@drawable/bg_screen">
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="16dp">
+        <TextView style="@style/Etiqueta" android:id="@+id/textTagMenu" android:text="@string/tag_menu" />
         <TextView android:id="@+id/textTitulo" style="@style/Titulo" android:text="@string/central" />
-        <TextView android:id="@+id/textSaudacao" style="@style/Texto" android:text="@string/central" />
-        <TextView android:id="@+id/textOrientacao" style="@style/Texto" android:text="@string/orientacao_central" />
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:minHeight="230dp" android:layout_marginBottom="16dp" android:background="@drawable/painel">
-            <ImageView android:id="@+id/imageScanner" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ic_scanner" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
-            <TextView android:id="@+id/textScanner" style="@style/Titulo" android:text="@string/scanner" />
-            <TextView android:id="@+id/textDescScanner" style="@style/Texto" android:text="@string/desc_scanner" />
-            <Button android:id="@+id/buttonScanner" style="@style/Botao" android:text="@string/abrir" />
+        <TextView android:id="@+id/textSaudacao" style="@style/Texto" android:text="@string/central" android:textColor="@color/rosa" android:textSize="17sp" android:fontFamily="monospace" />
+        <TextView android:id="@+id/textOrientacao" style="@style/Texto" android:text="@string/orientacao_central" android:textColor="@color/secundario" android:layout_marginBottom="20dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:minHeight="0dp" android:layout_marginBottom="16dp" android:background="@drawable/painel" android:padding="16dp">
+            <TextView style="@style/Etiqueta" android:id="@+id/textTagScanner" android:text="@string/tag_scanner" android:textColor="@color/rosa" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <ImageView android:id="@+id/imageScanner" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_scanner" android:contentDescription="@string/desc_icone_modulo" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" android:layout_marginEnd="14dp" />
+                <TextView android:id="@+id/textScanner" style="@style/Titulo" android:text="@string/scanner" android:layout_width="0dp" android:layout_weight="1" android:textSize="21sp" android:layout_gravity="center_vertical" android:layout_marginBottom="0dp" />
+            </LinearLayout>
+            <TextView android:id="@+id/textDescScanner" style="@style/Texto" android:text="@string/desc_scanner" android:textColor="@color/secundario" android:layout_marginBottom="12dp" />
+            <Button android:id="@+id/buttonScanner" style="@style/Botao" android:text="@string/scanner_abrir" />
         </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:minHeight="230dp" android:layout_marginBottom="16dp" android:background="@drawable/painel">
-            <ImageView android:id="@+id/imageArena" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ic_arena" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
-            <TextView android:id="@+id/textArena" style="@style/Titulo" android:text="@string/arena" />
-            <TextView android:id="@+id/textDescArena" style="@style/Texto" android:text="@string/desc_arena" />
-            <Button android:id="@+id/buttonArena" style="@style/Botao" android:text="@string/abrir" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:minHeight="0dp" android:layout_marginBottom="16dp" android:background="@drawable/hero" android:padding="16dp">
+            <TextView style="@style/Etiqueta" android:id="@+id/textTagArena" android:text="@string/tag_arena" android:textColor="@color/rosa" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <ImageView android:id="@+id/imageArena" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_arena" android:contentDescription="@string/desc_icone_modulo" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" android:layout_marginEnd="14dp" />
+                <TextView android:id="@+id/textArena" style="@style/Titulo" android:text="@string/arena" android:layout_width="0dp" android:layout_weight="1" android:textSize="21sp" android:layout_gravity="center_vertical" android:layout_marginBottom="0dp" />
+            </LinearLayout>
+            <TextView android:id="@+id/textDescArena" style="@style/Texto" android:text="@string/desc_arena" android:textColor="@color/secundario" android:layout_marginBottom="12dp" />
+            <Button android:id="@+id/buttonArena" style="@style/Botao" android:text="@string/arena_abrir" />
         </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:minHeight="230dp" android:layout_marginBottom="16dp" android:background="@drawable/painel">
-            <ImageView android:id="@+id/imageCofre" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ic_cofre" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
-            <TextView android:id="@+id/textCofre" style="@style/Titulo" android:text="@string/cofre" />
-            <TextView android:id="@+id/textDescCofre" style="@style/Texto" android:text="@string/desc_cofre" />
-            <Button android:id="@+id/buttonCofre" style="@style/Botao" android:text="@string/abrir" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:minHeight="0dp" android:layout_marginBottom="16dp" android:background="@drawable/painel" android:padding="16dp">
+            <TextView style="@style/Etiqueta" android:id="@+id/textTagCofre" android:text="@string/tag_cofre" android:textColor="@color/rosa" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <ImageView android:id="@+id/imageCofre" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_cofre" android:contentDescription="@string/desc_icone_modulo" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" android:layout_marginEnd="14dp" />
+                <TextView android:id="@+id/textCofre" style="@style/Titulo" android:text="@string/cofre" android:layout_width="0dp" android:layout_weight="1" android:textSize="21sp" android:layout_gravity="center_vertical" android:layout_marginBottom="0dp" />
+            </LinearLayout>
+            <TextView android:id="@+id/textDescCofre" style="@style/Texto" android:text="@string/desc_cofre" android:textColor="@color/secundario" android:layout_marginBottom="12dp" />
+            <Button android:id="@+id/buttonCofre" style="@style/Botao" android:text="@string/cofre_abrir" />
         </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:minHeight="230dp" android:layout_marginBottom="16dp" android:background="@drawable/painel">
-            <ImageView android:id="@+id/imageRandomizador" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/ic_randomizador" android:contentDescription="@string/avatar_desc" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" />
-            <TextView android:id="@+id/textRandomizador" style="@style/Titulo" android:text="@string/randomizador" />
-            <TextView android:id="@+id/textDescRandomizador" style="@style/Texto" android:text="@string/desc_randomizador" />
-            <Button android:id="@+id/buttonRandomizador" style="@style/Botao" android:text="@string/abrir" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:minHeight="0dp" android:layout_marginBottom="16dp" android:background="@drawable/painel" android:padding="16dp">
+            <TextView style="@style/Etiqueta" android:id="@+id/textTagRandomizador" android:text="@string/tag_randomizador" android:textColor="@color/rosa" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <ImageView android:id="@+id/imageRandomizador" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_randomizador" android:contentDescription="@string/desc_icone_modulo" android:layout_gravity="center_horizontal" android:layout_marginBottom="8dp" android:layout_marginEnd="14dp" />
+                <TextView android:id="@+id/textRandomizador" style="@style/Titulo" android:text="@string/randomizador" android:layout_width="0dp" android:layout_weight="1" android:textSize="21sp" android:layout_gravity="center_vertical" android:layout_marginBottom="0dp" />
+            </LinearLayout>
+            <TextView android:id="@+id/textDescRandomizador" style="@style/Texto" android:text="@string/desc_randomizador" android:textColor="@color/secundario" android:layout_marginBottom="12dp" />
+            <Button android:id="@+id/buttonRandomizador" style="@style/Botao" android:text="@string/randomizador_abrir" />
         </LinearLayout>
-        <Button android:id="@+id/buttonVoltar" style="@style/Botao" android:text="@string/encerrar" />
+        <Button android:id="@+id/buttonVoltar" style="@style/BotaoSecundario" android:text="@string/encerrar" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
